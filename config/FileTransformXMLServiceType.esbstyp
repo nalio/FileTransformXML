@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<serviceType xmlns="http://www.sonicsw.com/sonicxq" name="FileTransformXMLService" factoryClass="com.progress.codeshare.esbservice.fileTransformXML.FileTransformXMLService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///d:/Sonic/ESB7.5/schema/serviceType.xsd">
+	<validParams>
+	    <init>
+	        <stringParam name="FILE_ENCONDING" required="false">
+	            <default edittable="true" editAsRef="false">UTF-16</default>
+	        </stringParam>
+	        <stringParam name="MAX_EXECUTION" required="false">
+	            <default edittable="true" editAsRef="false">6</default>
+	        </stringParam>
+	        <stringParam name="INTERVAL_EXECUTION" required="false">
+	            <default edittable="true" editAsRef="false">30000</default>
+	        </stringParam>
+	    </init>
+	    <runtime>
+	        <stringParam name="FILE_DIRECTORY"></stringParam>
+	        <stringParam name="FILE_NAME"></stringParam>
+	        <stringParam name="FILE_SEPARATOR"></stringParam>
+	        <stringParam name="FILE_TYPE"></stringParam>
+	    </runtime>
+	</validParams>
+</serviceType>
